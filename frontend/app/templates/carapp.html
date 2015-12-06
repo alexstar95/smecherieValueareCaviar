@@ -8,7 +8,51 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+
+
 <style>
+
+
+.firstuse, .firsttest{
+  border: 2px solid #CCCCCC;
+  border-radius: 8px;
+  font-size: 15px;
+  height: 30px;
+  line-height: 30px;
+  outline: medium none;
+  padding: 8px 12px;
+  width: 150px;
+
+
+}
+
+
+.typeahead, .tt-query {
+  border: 2px solid #CCCCCC;
+  border-radius: 8px;
+  font-size: 15px;
+  height: 30px;
+  line-height: 30px;
+  outline: medium none;
+  padding: 8px 12px;
+  width: 150px;
+}
+
+
+.tt-dropdown-menu {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 12px;
+  padding: 8px 0;
+  width: 422px;
+}
+
+.tt-query{
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
 
   html {
       background: url(background.jpg) no-repeat center center fixed; 
@@ -35,8 +79,8 @@ body{
 
   padding-left: 40px;
 }
- 
-</script>
+
+
 </style>
 
 
@@ -55,14 +99,23 @@ Some text.<br><br>
 
 
 
-
-    
-    <div class="input-group">
-    
-      <input  type="text" class="typeahead" placeholder="Search for a brand">
-    
-        <span class="glyphicon glyphicon-search"></span>
+    <div class="input-group">    
+      <input  type="text" class="typeahead tt-query" autocomplete="off" placeholder="Search for a brand "> </input>   
+        <span class="glyphicon glyphicon-search"></span><br><br>
       </span>
+
+
+<div class="input-group input-append date" id="dateRangePicker">
+                <input type="text" class="firstuse" name="date" placeholder="First use"/>
+                <span class="glyphicon glyphicon-calendar"></span>
+            </div><br>
+
+            <div class="input-group input-append date" id="dateRangePicker">
+                <input type="text" class="firsttest" name="date" placeholder="First test"/>
+                <span class="glyphicon glyphicon-calendar"></span>
+            </div>
+
+
 </div>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
