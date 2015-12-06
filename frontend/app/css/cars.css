@@ -1,0 +1,111 @@
+html {
+    background: url(background.jpg) no-repeat center center fixed; 
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+body{
+  font-size: 16px;
+  padding-top: 60px;
+  background: transparent;
+}
+
+
+.firstuse, .firsttest{
+  border: 2px solid #CCCCCC;
+  border-radius: 8px;
+  font-size: 15px;
+  height: 30px;
+  line-height: 30px;
+  outline: medium none;
+  padding: 8px 12px;
+  width: 150px;
+
+
+}
+
+.typeahead, .tt-query {
+  border: 2px solid #CCCCCC;
+  border-radius: 8px;
+  font-size: 15px;
+  height: 30px;
+  line-height: 30px;
+  outline: medium none;
+  padding: 8px 12px;
+  width: 150px;
+  margin-bottom: 2px;
+}
+
+.input-box {
+  width: 350px;
+  height: 40px;
+}
+
+
+.tt-dropdown-menu {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 12px;
+  padding: 8px 0;
+  width: 422px;
+}
+
+.tt-query{
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+.panel{
+  background-color:rgba(255,255,255,0.9);
+  min-height: 500px;
+  max-height: 700px;
+}
+
+.glyphicon{
+  padding: 9px;
+  border-radius: 5px;
+  border: 1px solid black;
+  border: 2px solid #CCCCCC;
+  margin-left: 10px
+}
+
+.body-wrapper {
+  border-radius: 10px;
+  color: #515151;
+  background-color: white;
+  margin: 0 auto;
+  width: 70%;
+  padding: 50px 0px;
+  height: 600px;
+  margin-bottom: 20px;
+}
+
+.body-wrapper-2 {
+
+  margin: 0 auto;
+  width: 50%;
+}
+
+ul.results {
+    width: 350px;
+    margin: 0px;
+    background-color: #f1f1f1;
+    max-height: 100px;
+    overflow: scroll;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0,0,1,0.17);
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+ul.results > li.result {
+  list-style-type: none;
+}
