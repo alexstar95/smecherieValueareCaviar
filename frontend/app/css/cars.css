@@ -16,11 +16,12 @@ body{
 
 .clear{
   clear: both;
+  margin-bottom: 20px;
 }
 
 .right{
   margin-top:22px;
-padding-right: 50px;
+  padding-right: 50px;
   float:right;
 }
 
@@ -91,7 +92,7 @@ padding-right: 50px;
 }
 
 .input-box {
-  width: 300px;
+  width: 318px;
   height: 40px;
 }
 
@@ -134,6 +135,11 @@ padding-right: 50px;
   padding: 50px 0px;
   height: 500px;
   margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+.header {
+  margin-bottom: 20px;
 }
 
 .body-wrapper-2 {
@@ -143,7 +149,7 @@ padding-right: 50px;
 }
 
 ul.results {
-    width: 350px;
+    width: 100%;
     margin: 0px;
     background-color: #f1f1f1;
     max-height: 100px;
@@ -158,4 +164,39 @@ ul.results {
 
 ul.results > li.result {
   list-style-type: none;
+}
+
+.more-details {
+  clear: both;
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+.cylindric {
+  float: left;
+}
+
+.mileage {
+  float: right;
+  border-radius: 3px;
+  height: 35px;
+}
+
+.capacity {
+  border-radius: 3px;
+  height: 35px;
+}
+
+.input-group {
+  display: block;
+}
+
+.send-button {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.firstuseT, .firstuseD {
+
+  font-size: 16px;
 }

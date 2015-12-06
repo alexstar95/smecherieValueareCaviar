@@ -12,28 +12,17 @@
 </head>
 
 <body>
-
-
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="header">
-
- 
-
-                    <h2 class="text-center">
-                       
-            Some text
-          </h2>
-                </div>
-
-
                 <div class="body-wrapper">
-
+                    <div class="header">
+                        <h2 class="text-center">
+                            Enter your car details
+                        </h2>
+                    </div>
                     <div class="body-wrapper-2">
                         <div class="input-group">
-                           
-
                             <input type="text" class="typeahead tt-query input-box" autocomplete="off" placeholder="Search for a brand">
 
                             <span class="glyphicon glyphicon-search"></span>
@@ -46,7 +35,14 @@
                                 <li class="result">dasdas</li>
                             </ul>
                         </div>
-
+                        <div class="more-details">
+                            <div class="cylindric">
+                                <input type="text" class="capacity" placeholder="Enter cylindric capacity">
+                            </div>
+                            <div class="mileage">
+                                <input type="text" class="mileage" placeholder="Enter car mileage">
+                            </div>
+                        </div>
                         <div class="clear">
                             <div class="left">
                                 <div class="firstuseD">First use date</div>
@@ -122,7 +118,6 @@
                                         </option>
 
                                     </select>
-                                    <span class="glyphicon glyphicon-calendar"></span>
                                 </div>
                             </div>
                             <div class="right">
@@ -199,15 +194,16 @@
                                         </option>
 
                                     </select>
-                                    <span class="glyphicon glyphicon-calendar"></span>
                                 </div>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-default send-button">
+                            Send
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
    </div>
 </body>
-
 </html>
