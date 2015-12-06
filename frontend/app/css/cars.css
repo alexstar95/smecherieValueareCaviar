@@ -14,6 +14,39 @@ body{
   background: transparent;
 }
 
+.clear{
+  clear: both;
+}
+
+.right{
+  margin-top:22px;
+padding-right: 50px;
+  float:right;
+}
+
+.firstuseD{
+      font-size: 20px;
+    margin-top: -18px;
+}
+
+.firstuseT{
+      font-size: 20px;
+    margin-top: -24px;
+}
+
+.left{
+      margin-top:15px;
+      float: left;
+    }
+
+.rightB{
+
+ width: 80px;
+}
+
+.leftB{
+  width: 80px;
+}
 
 .firstuse, .firsttest{
   border: 2px solid #CCCCCC;
@@ -25,6 +58,23 @@ body{
   padding: 8px 12px;
   width: 150px;
 
+
+}
+
+.img{
+
+  width:170px;
+  height: 100px;
+  margin-left: 500px;
+
+
+
+}
+
+.aling{
+
+  text-align: center;
+  padding-left: 100px;
 
 }
 
@@ -41,7 +91,7 @@ body{
 }
 
 .input-box {
-  width: 350px;
+  width: 300px;
   height: 40px;
 }
 
@@ -80,9 +130,9 @@ body{
   color: #515151;
   background-color: white;
   margin: 0 auto;
-  width: 70%;
+  width: 65%;
   padding: 50px 0px;
-  height: 600px;
+  height: 500px;
   margin-bottom: 20px;
 }
 
