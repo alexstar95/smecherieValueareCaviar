@@ -189,6 +189,7 @@ ul.results > li.result {
 
 .input-group {
   display: block;
+  margin-bottom: 20px;
 }
 
 .send-button {

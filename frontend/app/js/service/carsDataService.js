@@ -13,6 +13,23 @@ angular.module('carsApp')
 					return response.data;
 					console.log(response.data);
 				}, function(result){});
+			},
+
+			sendData: function(carCapacity, carMileage, carFirst, carTest) {
+
+				var url  = "/sendData";
+				var data = {
+					'carCapacity' : carCapacity,
+					'carMileage' : carMileage,
+					'carFirst' : carFirst,
+					'carTest' : carTest
+				};
+
+				console.log(data);
+
+				return $http.post(url, data).then(function(response) {
+					return response.data;
+				}, function(){});
 			}
 		}
 	}

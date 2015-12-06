@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Carr App</title>
 		<meta charset="utf-8">
 		<script src="/angular.min.js"></script>
 		<script src="/app.js"></script>
 		<script src="/controller/carsDataController.js"></script>
 		<script src="/service/carsDataService.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="cars.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	</head>
 	<body ng-app="carsApp">		
 		<div ng-controller="carsDataController">
-			<div ng-init="getCarsData()"></div>
-			dasdas
-			{{test}}
+		<div class="container">
+        	<div class="row">
+            <div class="col-md-12">
+                <div class="body-wrapper">
+                    <div class="header">
+                        <h2 class="text-center">
+                            Enter your car details
+                        </h2>
+                    </div>
+                    <div class="body-wrapper-2">
+                        <div class="input-group">
+                            <input type="text" class="typeahead tt-query input-box" 
+                                   placeholder="Search for a brand"
+                                   ng-model="carName">
+
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                        <div class="more-details">
+                            <div class="cylindric">
+                                <input type="text" class="capacity"
+                                	   placeholder="Enter cylindric capacity"
+                                	   ng-model="carCapacity">
+                            </div>
+                            <div class="mileage">
+                                <input type="text" class="mileage" 
+                                  	   placeholder="Enter car mileage"
+                                  	   ng-model="carMileage">
+                            </div>
+		                        </div>
+		                        <div class="clear">
+		                            <div class="left">
+		                                <div class="firstuseD">First use date</div>
+		                                <div id="dateRangePicker">
+		                                    <select name="start-date form-control" class="leftB" ng-model="carFirst">
+		                                       <option value="{{year}}" ng-repeat="year in start_years track by $index">
+		                                       		{{year}}
+		                                       </option>
+		                                    </select>
+		                                </div>
+		                            </div>
+		                            <div class="right">
+		                                <div class="firstuseT">First test date</div>
+		                                <div id="dateRangePicker">
+		                                    <select name="start-date form-control" class="rightB" ng-model="carTest">
+		                                        <option value="{{year}}" ng-repeat="year in test_years track by $index">
+		                                        	{{year}}
+		                                        </option>
+		                                    </select>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <button type="button" class="btn btn-default send-button" ng-click="sendData()">
+		                            Send
+		                        </button>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+			</div>
 		</div>
 	</body>
 </html>
